@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <title>Bootstrap</title>
+</head>
+<body class="bg-light">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-7 bg-white mt-5 shadow p-3 mb-2 bg-body rounded">
+        <div class="p-4">
+          <h2 class="mb-5">Payment information</h2>
+
+          <form  method="POST">
+            <div class="row">
+              <label class="form-label col-12 mb-3">CARD NUMBER
+                <input type="password" class="form-control" placeholder="**** **** **** ****" >
+              </label>
+
+              <label class="form-label col-6">CARD HOLDER
+                <input type="text" class="form-control" placeholder="Michael Jordan">
+              </label>
+
+
+              <label class="form-label col-3">EXP.DATE
+                <input type="date" class="form-control" placeholder="03/19">
+              </label>
+
+              <label class="form-label col-3">CVC
+                <input type="password" class="form-control" placeholder="***">
+              </label>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+      <div class="col-4 ms-5 bg-white mt-5 shadow p-3 mb-2 bg-body rounded">
+        <div class="p-4 ">
+          <div class="wrapper border-bottom pb-3 d-flex align-items-center justify-content-between">
+            <div>
+              <img class="p-2 border me-3" src="https://picsum.photos/id/1/40/40" alt="img">
+              <span class="fw-bold">Chocalate bar</span>
+            </div>
+            <span class="fw-bold">$2.49</span>
+          </div>
+          <div class="border-bottom pb-3 pt-3">
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="fw-bolder">Subtotal</span>
+              <span class="fw-bolder">$4.98</span>
+            </div>
+            <div class="d-flex align-items-center justify-content-between">
+              <span class="fw-bolder mb-3">Shipping</span>
+              <span class="fw-bolder">$3.00</span>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-between pt-3 pb-3">
+            <span class="fw-bolder mb-3">Total</span>
+            <span class="fw-bolder">$3.00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-7 bg-white mt-5 shadow p-3 mb-0 bg-body rounded">
+        <div class="p-4">
+          <h2>Billing adress</h2>
+
+          <form class="form-check mt-5" action="#" method="POST">
+            <input class="form-check-input" type="radio" name="type_buying" id="adress">
+            <label class="form-check-label border-bottom d-block pb-3 fw-bold" for="adress">
+              Same as the shipping adress
+            </label>
+
+            <input class="form-check-input mt-3" type="radio" name="type_buying" id="bill">
+            <label class="form-check-label fw-bold mt-3" for="bill">
+              Use a different billing adress
+            </label>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-7 mt-5 d-flex align-items-center justify-content-between mb-3">
+        <a href="#" class="text-primary fs-6 text-decoration-none">Return to shipping method</a>
+        <button type="button" class="btn btn-primary">Complete order</button>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
